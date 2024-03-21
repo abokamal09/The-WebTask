@@ -7,8 +7,27 @@
 
 body{
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.left-div, .right-div{
+    padding: 40px;
+
+}
+
+.left-div {
+    width: 50%;
+    background: #fff;
+}
+
+.right-div{
+    position: relative;
+    width: 50%;
+    background: linear-gradient(to bottom left, #9181F4, #5038ED);
+    padding: 40px;
+}
