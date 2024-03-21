@@ -53,16 +53,52 @@ input[type=password] {
     padding: 0 10px;
 }
 
+::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
+
 input[type=submit] {
     width: 124px;
     height: 52px;
+    margin-bottom: 30px;
     background: #5038ED;
     border: none;
     border-radius: 16px;
     color: #fff;
     font-size: 12px;
     font-weight: 700;
+    cursor: pointer;
     background: linear-gradient(to right, #9181F4, #5038ED);
+}
+
+.line{
+    position: relative;
+    padding: 0 110px;
+}
+
+.line:before,
+.line:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: #F0EDFF;
+}
+
+.line:before {
+    left: 0;
+}
+
+.line:after {
+    right: 0;
+}
+
+span{
+    font-weight: 700;
 }
 
 .back{
