@@ -1,3 +1,8 @@
+:root {
+  --width: 364px;
+  --height: 52px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,8 +49,8 @@ form {
 
 input[type="text"],
 input[type="password"] {
-  width: 364px;
-  height: 52px;
+  width: var(--width);
+  height: var(--height);
   border: none;
   background-color: #f0edffcc;
   margin-bottom: 20px;
@@ -101,14 +106,16 @@ span {
   font-weight: 700;
 }
 
-.btn div {
+.btn > div {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: var(--width);
+  height: var(--height);
   border: 1px solid #f0edff;
   border-radius: 16px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin: 20px auto;
 }
 
 .btn img {
